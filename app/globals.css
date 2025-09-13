@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to vibrant modern color palette */
+  --background: #b0e2ff;
+  --foreground: #1e293b;
+  --card: #c0d3f1;
+  --card-foreground: #1e293b;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #001e4e;
+  --primary-foreground: #ffffff;
+  --secondary: #004298;
+  --secondary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #1e293b;
+  --accent: #001e4e;
+  --accent-foreground: #ffffff;
+  --destructive: #001e4e;
+  --destructive-foreground: #ffffff;
+  --border: #d1d5db;
+  --input: #ffffff;
+  --ring: rgba(0, 39, 57, 0.5);
+  --chart-1: #0ea5e9;
+  --chart-2: #d946ef;
+  --chart-3: #fb923c;
+  --chart-4: #821c4f;
+  --chart-5: #1e293b;
+  --radius: 0.5rem;
+  --sidebar: #f1f5f9;
+  --sidebar-foreground: #1e293b;
+  --sidebar-primary: #0ea5e9;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #007bff;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #d1d5db;
+  --sidebar-ring: rgba(14, 165, 233, 0.5);
+}
+
+.dark {
+  /* Updated dark mode with vibrant colors */
+  --background: #0f172a;
+  --foreground: #e2e8f0;
+  --card: rgba(30, 41, 59, 0.8);
+  --card-foreground: #e2e8f0;
+  --popover: rgba(30, 41, 59, 0.9);
+  --popover-foreground: #e2e8f0;
+  --primary: #001e4e;
+  --primary-foreground: #ffffff;
+  --secondary: #001e4e;
+  --secondary-foreground: #ffffff;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #ffffff;
+  --accent-foreground: #ffffff;
+  --destructive: #001e4e;
+  --destructive-foreground: #ffffff;
+  --border: #334155;
+  --input: #1e293b;
+  --ring: rgba(14, 165, 233, 0.5);
+  --chart-1: #0ea5e9;
+  --chart-2: #d946ef;
+  --chart-3: #fb923c;
+  --chart-4: #ec4899;
+  --chart-5: #e2e8f0;
+  --sidebar: rgba(30, 41, 59, 0.9);
+  --sidebar-foreground: #e2e8f0;
+  --sidebar-primary: #0ea5e9;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #009dff;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #334155;
+  --sidebar-ring: rgba(14, 165, 233, 0.5);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    /* Updated to vibrant gradient background */
+    @apply bg-gradient-to-br from-blue-50 via-purple-50 to-orange-50 text-foreground min-h-screen;
+  }
+}
+
+/* Updated utilities for vibrant modern look */
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-sm bg-card/80 border border-white/20 shadow-xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+
+  .pulse-glow {
+    @apply animate-pulse shadow-lg shadow-primary/25;
+  }
+
+  .vibrant-card {
+    @apply bg-gradient-to-br from-white to-card border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+}
