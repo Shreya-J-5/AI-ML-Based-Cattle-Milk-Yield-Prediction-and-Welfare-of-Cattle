@@ -149,3 +149,17 @@
     @apply bg-gradient-to-br from-white to-card border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300;
   }
 }
+/* Enable smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+ 
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+
