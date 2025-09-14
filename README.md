@@ -1,7 +1,7 @@
 #  AI/ML-Based Cattle Milk Yield and Health Prediction Platform
 
 ##  Overview
-This repository provides an **AI/ML-powered Cattle Monitoring Platform** 🐮📊 that helps farmers **predict milk yield** and **detect diseases early**.  
+This repository provides an **AI/ML-powered Cattle Monitoring Platform** that helps farmers **predict milk yield** and **detect diseases early**.  
 By analyzing cattle feed, activity, environment, and health data, the platform boosts farm productivity, reduces risks, and supports data-driven dairy management.  
 
 ---
