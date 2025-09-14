@@ -6,7 +6,7 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-##  Features
+## • Features
 |  Feature                  |  Description |
 |-----------------------------|---------------|
 | 1. Milk Yield Prediction    | Forecast daily milk output using regression and time-series ML models |
@@ -17,7 +17,7 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-##  Data Inputs
+## • Data Inputs
 |  Category       |  Data Collected |
 |------------------|------------------|
 | 1. Animal         | Breed, age, lactation stage, parity, reproductive cycle, historical yield |
@@ -28,7 +28,7 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-##  Machine Learning Models
+## • Machine Learning Models
 |  Model  |  Type  |  Techniques |  Target Outcomes |
 |-----------|----------|--------------|------------------|
 |  Milk Yield Prediction | Regression / Time-Series | Random Forest, Gradient Boosting, LSTM | Daily milk output forecast |
@@ -36,7 +36,7 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-##  System Architecture
+## • System Architecture
 |  Layer           |  Function |
 |-------------------|-------------|
 |  Data Collection | Collect data manually or via IoT sensors |
@@ -47,7 +47,7 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-##  Dashboard Functionalities
+## • Dashboard Functionalities
 |  Module          |  Description |
 |--------------------|----------------|
 | 1. Data Input      | Add feed, health, and activity details |
@@ -58,7 +58,7 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-##  Tech Stack
+## • Tech Stack
 |  Component   |  Tools/Technologies |
 |----------------|-----------------------|
 | 1. Backend     | Python, Flask/FastAPI |
@@ -70,7 +70,7 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-##  Installation
+## • Installation
 ## Prerequisites
 Before installing and running the project, ensure you have the following installed on your system:
 
