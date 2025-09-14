@@ -70,4 +70,83 @@ By analyzing cattle feed, activity, environment, and health data, the platform b
 
 ---
 
-## ⚡ Installation
+##  Installation
+## Prerequisites
+Before installing and running the project, ensure you have the following installed on your system:
+
+- Python 3.8 or higher  
+- pip (Python package manager)  
+- Node.js and npm (for frontend/dashboard)  
+- Git  
+
+---
+
+## Steps
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Create a Python Virtual Environment
+```bash
+python -m venv venv
+```
+
+### 3. Activate the Virtual Environment
+
+**On macOS/Linux:**
+```bash
+source venv/bin/activate
+```
+
+**On Windows (Command Prompt):**
+```cmd
+venv\Scripts\activate
+```
+
+**On Windows (PowerShell):**
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 4. Upgrade pip (Recommended)
+```bash
+python -m pip install --upgrade pip
+```
+
+### 5. Install Backend Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Install Frontend Dependencies (Optional, if dashboard is included)
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### 7. Run the Backend Service
+```bash
+# If entrypoint file is app.py
+python app.py
+
+# If using FastAPI/Uvicorn
+uvicorn main:app --reload
+```
+
+### 8. Access the Application
+- Open the frontend dashboard in your browser: [http://localhost:3000](http://localhost:3000)  
+- Backend API (if running separately): [http://localhost:8000](http://localhost:8000)  
+
+---
+
+## Notes
+- If environment variables are required, create a `.env` file:
+```bash
+cp .env.example .env
+```
+- Update the `.env` file with the correct configuration values before starting the application.
+
